@@ -97,6 +97,7 @@ img {
 
 .hero {
   padding: 50px 0;
+  background-color: #f5f5f5;
 }
 
 .hero-block {
@@ -123,6 +124,7 @@ img {
 
 .hero-text__subtitle {
   display: inline-block;
+  font-family: "Museo Sans Cyrl -700";
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 70px;
@@ -200,6 +202,7 @@ img {
   }
   .hero-list__text {
     font-size: 12px;
+    max-width: 220px;
   }
   .hero-list__image {
     margin-right: 15px;
@@ -208,7 +211,10 @@ img {
 
 @media (max-width: 420px) {
   .hero-text__subtitle {
-    font-size: 10px;
+    font-size: 16px;
+    max-width: 200px;
+    font-family: sans-serif;
+    font-weight: 700;
   }
   .hero__image {
     margin-right: 8px;
