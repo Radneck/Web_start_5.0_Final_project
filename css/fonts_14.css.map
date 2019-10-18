@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,UAAU;EACV,WAAW,EAAE,kBAAkB;EAC/B,GAAG,EAAE,4BAA4B;EACjC,GAAG,EAAE,mCAAmC,CAAC,2BAA2B,EACpE,6BAA6B,CAAC,cAAc,EAC5C,4BAA4B,CAAC,kBAAkB;EAC/C,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,MAAM",
+    "sources": [
+        "../Sass/Blocks/fonts_14.scss"
+    ],
+    "names": [],
+    "file": "fonts_14.css"
+}
