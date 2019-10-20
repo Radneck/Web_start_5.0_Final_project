@@ -21,6 +21,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -256,6 +257,10 @@ img {
   }
   .hero__image {
     margin-right: 8px;
+  }
+  .hero-image {
+    width: 75%;
+    height: auto;
   }
 }
 /*# sourceMappingURL=style_14.css.map */
