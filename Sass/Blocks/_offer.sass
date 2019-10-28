@@ -1,0 +1,68 @@
+strong
+    font-weight: bold
+
+.offer
+    background: url('../img/offer/offer_background_image.png') no-repeat
+    background-position: center right 
+    background-size: contain
+    position: relative
+    &::before
+        content: ''
+        width: 50%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        background-color: #fff
+    &-block
+        width: 50%
+        padding-right: 90px
+        position: relative
+    &__title
+        max-width: 350px
+        line-height: 35px
+        margin-bottom: 20px
+
+    &__subtitle
+        max-width: 235px
+        margin-bottom: 30px
+    &__input
+        width: 240px
+        margin-bottom: 30px
+        &:first-child
+            margin-right: 10px
+        &:last-child
+            padding-right: 7px
+        
+    &__button
+        font-weight: 600
+        width: 100%
+        min-height: 70px
+    &__footer
+        display: flex
+        justify-content: space-between
+        margin-top: 31px
+    &__item
+        line-height: 24px
+        width: 220px
+        height: 40px
+        &:first-child
+            width: 240px
+            height: 40px
+            
+
+@media (max-width: 1200px)
+    .offer
+        background-size: cover
+        &__input
+            width: 100%
+            margin-bottom: 10px
+        &__button
+            font-size: 13px
+
+@media (max-width: 768px)
+    .offer
+        background: white
+        &-block
+            width: 100%
+            padding-right: 0
