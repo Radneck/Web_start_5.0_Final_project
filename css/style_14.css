@@ -244,6 +244,10 @@ img {
   max-height: 48px;
 }
 
+.hero-list__item:first-child {
+  margin-bottom: 30px;
+}
+
 .hero-list__item:last-child {
   margin-bottom: 0;
 }
@@ -408,6 +412,7 @@ strong {
 .offer__input {
   width: 240px;
   margin-bottom: 30px;
+  padding-bottom: 25px;
 }
 
 .offer__input:first-child {
@@ -435,14 +440,16 @@ strong {
 }
 
 .offer__item {
+  font-size: 15px;
   line-height: 24px;
   width: 220px;
   height: 40px;
 }
 
 .offer__item:first-child {
-  width: 240px;
+  width: 250px;
   height: 40px;
+  margin-right: 70px;
 }
 
 @media (max-width: 1200px) {
