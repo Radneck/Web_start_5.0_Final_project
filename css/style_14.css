@@ -66,6 +66,7 @@ img {
   background-color: #ffd200;
   border: none;
   padding: 15px 27px 17px 27px;
+  outline: none;
 }
 
 .button:hover {
@@ -94,6 +95,7 @@ img {
   padding: 20px 23px;
   font-size: 15px;
   border-radius: 10px;
+  outline: none;
 }
 
 .navbar {
