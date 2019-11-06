@@ -12,8 +12,8 @@
     &-dialog
       position: relative
       margin: 0 auto
-      width: 570px
-      height: 674px
+      max-width: 570px
+      max-height: 674px
       background-color: #fff
       padding: 40px
       text-align: center
@@ -35,11 +35,12 @@
       &__form
         display: flex
         flex-direction: column
+        align-items: center
         width: 100%
         margin-top: 50px
         margin-bottom: 33px
       &__input
-        margin: 0 auto 15px auto
+        margin-bottom: 15px
         padding-left: 26px 
         width: 370px
         height: 65px
@@ -48,7 +49,7 @@
         background-color: #ffffff
         outline: none
       &__button
-        margin: 30px auto 0 auto
+        margin: 30px 0 0 0
         width: 368px
         height: 70px
         border-radius: 10px
@@ -58,7 +59,7 @@
         flex-direction: column
         align-items: center
       &__firstFooterItem
-        width: 285px
+        max-width: 285px
         +reg
         font-size: 15px
         font-weight: 400
@@ -68,14 +69,47 @@
         +bold
         font-size: 24px
         font-weight: 400
-        line-height: 24px
-        
-        
+        line-height: 24px        
       &__close
         position: absolute
         top: 0
         right: 0
-        background-color: none
+        background-color: #ffffff
         border: none
-
-    
+@media (max-width: 440px)
+    .modal
+        width: 100%
+        &_active
+          display: flex
+          align-items: center
+        &-dialog
+          position: relative
+          margin: 0 auto
+          width: 100%
+          background-color: #fff
+          padding: 40px
+          text-align: center
+          &__title
+            +bold
+            width: 200px
+            font-size: 18px
+            font-weight: 400
+            line-height: 28px
+            margin-bottom: 60px
+          &__subtitle
+            line-height: 20px
+          &__form
+            max-width: 300px
+          &__input
+            max-width: 220px
+            max-height: 45px
+          &__button
+            width: 220px
+            height: 45px
+          &__secondFooterItem
+            +bold
+            font-size: 20px
+            font-weight: 400
+            line-height: 24px
+            
+            
