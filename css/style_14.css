@@ -80,8 +80,11 @@ img {
 }
 
 .section-title {
+  text-align: center;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 25px;
 }
 
@@ -96,6 +99,10 @@ img {
   font-size: 15px;
   border-radius: 10px;
   outline: none;
+}
+
+.arrows__left:hover, .arrows__right:hover {
+  cursor: pointer;
 }
 
 .navbar {
@@ -422,6 +429,7 @@ strong {
 }
 
 .offer__title {
+  text-align: left;
   max-width: 350px;
   line-height: 35px;
   padding-top: 13px;
@@ -724,5 +732,36 @@ strong {
     font-weight: 400;
     line-height: 24px;
   }
+}
+
+.portfolio {
+  background: #f5f5f5 url("../img/portfolio/portfol_pattern.png") repeat-y center left;
+  background-size: 50%;
+}
+
+.portfolio__title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  margin: 68px auto auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider__image {
+  margin: auto;
 }
 /*# sourceMappingURL=style_14.css.map */
