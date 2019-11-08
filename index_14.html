@@ -4,21 +4,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/slick.css">
 	<!-- <link rel="stylesheet" href="./css/slick-theme.css"> -->
-	<link rel="stylesheet" href="css/style_14.css">
+	<link rel="stylesheet" href="./css/animate.css">
+	<link rel="stylesheet" href="./css/style_14.css">
 	<title>Document</title>
 </head>
 <body>
 	<nav class="navbar">
 		<div class="container">
 			<div class="navbar-block">
-				<div class="navbar__logo">
+				<div class="navbar__logo wow fadeIn" data-wow-delay='0.2s'>
 					<img src="img/Repair_logo.png" alt="Логотип">
 				</div>
 				<!-- /.navbar__logo -->
-				<div class="navbar__info">
+				<div class="navbar__info wow fadeIn" data-wow-delay='0.2s'>
 					<div class="navbar__contacts">
 						<span class="navbar__address">
 							Калуга, Москва, МО
@@ -41,26 +42,26 @@
 			<div class="container">
 				<div class="hero-block">
 					<div class="hero-text">
-						<h1 class="hero-text__title">
+						<h1 class="hero-text__title wow fadeInLeft">
 							Внутренняя отделка помещений "под ключ"
 						</h1>
-						<span class="hero-text__subtitle">
+						<span class="hero-text__subtitle wow fadeInLeft">
 							с гарантией качества, прописанной в договоре
 						</span>
 						<ul class="hero-list">
-							<li class="hero-list__item">
+							<li class="hero-list__item wow bounceInLeft" data-wow-delay='0.1s'>
 								<div class="hero-list__image">
 									<img src="img/hero/clock.png" alt="clock">
 								</div>
 								<span class="hero-list__text">Точно соблюдаем сроки</span>
 							</li>
-							<li class="hero-list__item">
+							<li class="hero-list__item wow bounceInLeft" data-wow-delay='0.3s'>
 								<div class="hero-list__image">
 									<img src="img/hero/calculator.png" alt="calculator">
 								</div>
 								<span class="hero-list__text">Рассчитаем смету на работы<br> и материалы в день обращения</span>	
 							</li>
-							<li class="hero-list__item">
+							<li class="hero-list__item wow bounceInLeft" data-wow-delay='0.5s'>
 								<div class="hero-list__image">
 									<img src="img/hero/paint-board.png" alt="paint-board">
 								</div>
@@ -70,7 +71,7 @@
 						<!-- /.hero-list -->
 					</div>
 					<!-- /.hero-text -->
-					<div class="hero-image">
+					<div class="hero-image wow fadeInRight">
 						<img src="img/hero/hero_image.png" alt="План хатки">
 					</div>
 					<!-- /.hero-image -->
@@ -82,7 +83,7 @@
 		<!-- /.hero -->
 		<section class="offer section">
 			<div class="container">
-				<div class="offer-block">
+				<div class="offer-block wow fadeIn">
 					<h2 class="section-title offer__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h2>
 					<!-- /.section-title -->
 					<span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
@@ -105,7 +106,7 @@
 		<!-- /.offer -->
 		<section class="section portfolio">
 			<div class="container">
-				<h2 class="section-title portfolio__title">Работая с 2007 года, мы сделали более 500 ремонтов в квартирах и домах</h2>
+				<h2 class="section-title portfolio__title">Работая с 2007 года,<br>мы сделали более 500 ремонтов в квартирах и домах</h2>
 				<div class="slider">
 					<div class="slider__item">
 						<img class="slider__image" src="./img/portfolio/slider_1.png" alt="">
@@ -140,6 +141,69 @@
 		</section>
 		<!--конец портфолио-->
 
+		<section class="section price">
+			<div class="container">
+				<h2 class="section-title price__title">У нас очень гибкая система скидок на комплексные работы!</h2>
+				<span class="section-subtitle price__subtitle">Прайс на наши услуги</span>
+				<div class="cards">
+					<div class="card price__card wow fadeInUp" data-wow-delay='0.1s'>
+						<div class="card__image">
+							<img style="display: block;" src="./img/price/price-img_1.png" alt="">
+						</div>
+						<div class="card__text">
+							<h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+							<a href="#" class="card__link">Узнать цены</a>
+						</div>
+					</div>
+					<div class="card price__card wow fadeInUp" data-wow-delay='0.2s'>
+						<div class="card__image">
+							<img style="display: block;" src="./img/price/price-img_2.png" alt="">
+						</div>
+						<div class="card__text">
+							<h4 class="card__title">Ремонт комнат и квартир</h4>
+							<a href="#" class="card__link">Узнать цены</a>
+						</div>
+					</div>
+					<div class="card price__card wow fadeInUp" data-wow-delay='0.3s'>
+						<div class="card__image">
+							<img style="display: block;" src="./img/price/price-img_3.png" alt="">
+						</div>
+						<div class="card__text">
+							<h4 class="card__title">Отделка офисных помещений</h4>
+							<a href="#" class="card__link">Узнать цены</a>
+						</div>
+					</div>
+					<div class="card price__card wow fadeInUp" data-wow-delay='0.4s'>
+						<div class="card__image">
+							<img style="display: block;" src="./img/price/price-img_4.png" alt="">
+						</div>
+						<div class="card__text">
+							<h4 class="card__title">Ремонт в новостройках</h4>
+							<a href="#" class="card__link">Узнать цены</a>
+						</div>
+					</div>
+					<div class="card price__card wow fadeInUp" data-wow-delay='0.5s'>
+						<div class="card__image">
+							<img style="display: block;" src="./img/price/price-img_5.png" alt="">
+						</div>
+						<div class="card__text">
+							<h4 class="card__title">Ремонт кухонь</h4>
+							<a href="#" class="card__link">Узнать цены</a>
+						</div>
+					</div>
+					<div class="card price__card wow fadeInUp" data-wow-delay='0.6s'>
+						<div class="card__image">
+							<img style="display: block;" src="./img/price/price-img_6.png" alt="">
+						</div>
+						<div class="card__text">
+							<h4 class="card__title">Ремонт дач и коттеджей</h4>
+							<a href="#" class="card__link">Узнать цены</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 	</main> <!--КОНЕЦ ОСНОВНОГО ДОКУМЕНТА (СТРАНИЦЫ)-->
 
 	<!--Код модального окна-->
@@ -170,7 +234,9 @@
 	</script>
 	<script src="./js/modal.js"></script>
 	<script src="./js/slick.min.js"></script>
+	<script src="js/wow.min.js"></script>
 	<script>
+	  new WOW().init();
 	  $(document).ready(function(){
 		$('.slider').slick ({
 		  slidesToShow: 3,
@@ -192,20 +258,6 @@
 					  slidesToScroll: 1
 				  }
 			  }
-			//   {
-			// 	  breakpoint: 564,
-			// 	  settings: {
-			// 		  slidesToShow: 1,
-			// 		  slidesToScroll: 1
-			// 	  }
-			//   },
-			//   {
-			// 	  breakpoint: 320,
-			// 	  settings: {
-			// 		  slidesToShow: 1,
-			// 		  slidesToScroll: 1
-			// 	  }
-			//   }
 		  ]
 		});
 	  });
