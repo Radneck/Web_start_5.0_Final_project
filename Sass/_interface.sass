@@ -10,16 +10,7 @@ img
 .container 
     width: 1170px
     margin: auto
-@media ( max-width: 1200px)
-    .container
-        width: 760px
-@media ( max-width: 768px)
-    .container
-        max-width: 560px
-        width: 90% 
-@media ( max-width: 320px)
-    .container
-        width: 86%       
+       
 .button
     border-radius: 10px
     background-color: $main_color
@@ -42,6 +33,9 @@ img
     &-subtitle
         display: block
         font-size: 16px
+.brif
+    padding-bottom: 0
+
 .input
     border: 1px solid $border-input
     padding: 20px 23px
@@ -52,5 +46,20 @@ img
   &__left, &__right
     &:hover
         cursor: pointer
-        
+.error
+  border: 1px solid red
+ 
+@media ( max-width: 1200px)
+    .container
+        width: 760px
+@media ( max-width: 768px)
+    .container
+        max-width: 560px
+        width: 90% 
+    .section
+        padding-top: 60px
+        padding-bottom: 60px
+@media ( max-width: 320px)
+    .container
+        width: 86%     
       
