@@ -42,16 +42,27 @@ img
     font-size: 15px
     border-radius: 10px
     outline: none
+    &-group // Стилизация предупреждающих сообщений валидации секции offer
+        display: inline-block
+        position: relative
+        width: 240px
+        
 .arrows
   &__left, &__right
     &:hover
         cursor: pointer
-.error
-  border: 1px solid red
+em.falture
+    color: red
+    position: absolute
+    top: 45px
+    left: 55px
  
 @media ( max-width: 1200px)
     .container
         width: 760px
+    .input
+        &-group
+            width: 100%
 @media ( max-width: 768px)
     .container
         max-width: 560px
