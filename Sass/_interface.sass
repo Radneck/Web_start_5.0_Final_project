@@ -3,6 +3,12 @@
 body
    +reg  
    // font-family: 'Museo Sans Light', sans-serif
+a
+    text-decoration: none
+    color: $text_color
+strong
+    +bold
+    font-weight: 400
 
 img
     max-width: 100%
@@ -46,6 +52,10 @@ img
         display: inline-block
         position: relative
         width: 240px
+    &-brifGroup // Стилизация предупреждающих сообщений валидации секции brif
+        position: relative
+    &-modalGroup // Стилизация предупреждающих сообщений валидации секции modal
+        position: relative
         
 .arrows
   &__left, &__right

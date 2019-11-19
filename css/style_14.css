@@ -32,6 +32,17 @@ body {
   font-weight: 300;
 }
 
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+strong {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-weight: 400;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -91,6 +102,14 @@ img {
   display: inline-block;
   position: relative;
   width: 240px;
+}
+
+.input-brifGroup {
+  position: relative;
+}
+
+.input-modalGroup {
+  position: relative;
 }
 
 .arrows__left:hover, .arrows__right:hover {
@@ -1104,7 +1123,70 @@ strong {
   }
 }
 
+.footer {
+  position: relative;
+}
+
 .map {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 50%;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+
+.contacts__title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 100px;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts-list {
+  padding: 0;
+  list-style: none;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  line-height: 26px;
+  margin-bottom: 39px;
+}
+
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.contacts-list__text {
+  font-size: 16px;
+  width: 185px;
+  height: 39px;
+  padding-left: 25px;
+  padding-bottom: 20px;
 }
 /*# sourceMappingURL=style_14.css.map */

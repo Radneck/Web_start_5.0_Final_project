@@ -238,9 +238,15 @@
 						<h3 class="form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
 						<span class="form__subtitle">Для этого заполните форму ниже</span>
 						<form action="#" id="brif-form">
-							<input type="text" autocomplete="off" name="username" class="input brif__input" placeholder="Ваше Имя">
-							<input type="tel" autocomplete="off" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
-							<input type="email" autocomplete="off" name="email" class="input brif__input" placeholder="Ваш email">
+							<div class="input-brifGroup">
+								<input type="text" autocomplete="off" name="username" class="input brif__input" placeholder="Ваше Имя">
+							</div>
+							<div class="input-brifGroup">
+								<input type="tel" autocomplete="off" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
+							</div>
+							<div class="input-brifGroup">
+								<input type="email" autocomplete="off" name="email" class="input brif__input" placeholder="Ваш email">
+							</div>
 							<button class="button brif__button">Узнайть стоимость</button>
 							<span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
 						</form>
@@ -250,16 +256,38 @@
 		</section>
 	</main> 
 
-	<footer class="footer section">
+	<footer class="footer">
 		<div class="map" id="map">
 			<script type="text/javascript" charset="utf-8" async
-				src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A71486657a66b95652dffa72808820d735cb2b9b6b0ce4268c123218bef347aa5&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=true">
+				src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A71486657a66b95652dffa72808820d735cb2b9b6b0ce4268c123218bef347aa5&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false">
 				</script>
 		</div>
 		<div class="container">
 			<div class="contacts-block">
 				<div class="contacts">
 					<h3 class="contacts__title">Приезжайте к нам в гости! Проконсультируем Вас по всем вопросам ремонта</h3>
+					<ul class="contacts-list">
+						<li class="contacts-list__item">
+							<span class="contacts-list__icon">
+								<img src="./img/footer/map-placeholder.png" alt="Точка на карте">
+							</span>
+							<span class="contacts-list__text">г. Москва <br> <strong>ул. Ленинга, д. 10, корпус 2, оф. 308</strong></span>
+						</li>
+						<li class="contacts-list__item">
+							<span class="contacts-list__icon">
+								<img src="./img/footer/clock-with-white-face.png" alt="Часики">
+							</span>
+							<span class="contacts-list__text">Режим работы:<br><strong>с 9:00 до 18:00</strong></span>
+						</li>
+						<li class="contacts-list__item">
+							<span class="contacts-list__icon">
+								<img src="./img/footer/phone-call-button.png" alt="Телефон">
+							</span>
+							<span class="contacts-list__text">Телефон:<br> 
+								<a href="tel: + 7 (495) 42-251-31"><strong>+ 7 (495) 42-251-31</strong></a>
+							</span>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -277,8 +305,12 @@
 				ремонта по телефону!</h4>
 				<span class="modal-dialog__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
 				<form action="#" class="form modal-dialog__form" id="modal-form">
-					<input type="text" autocomplete="off" name="username" class="modal-dialog__input" placeholder="Ваше имя">
-					<input type="tel" autocomplete="off" name="username" class="modal-dialog__input phone" placeholder="Ваш телефон">
+					<div class="input-modalGroup">
+						<input type="text" autocomplete="off" name="username" class="modal-dialog__input" placeholder="Ваше имя">
+					</div>
+					<div class="input-modalGroup">
+						<input type="tel" autocomplete="off" name="username" class="modal-dialog__input phone" placeholder="Ваш телефон">
+					</div>
 					<button class="button modal-dialog__button">Узнать стоимость</button>
 				</form>
 				<div class="modal-dialog__footer">
@@ -343,6 +375,8 @@
 			  email: true 
 			}
 		  },
+		  errorElement: "em",
+		  errorClass: "falture",
 		  messages: {
 			username: {
 			  required: "Укажите имя",
@@ -370,6 +404,8 @@
 			  required: true
 			}
 		  },
+		  errorElement: "em",
+		  errorClass: "falture",
 		  messages: {
 		    username: {
 			  required: "Укажите имя",
