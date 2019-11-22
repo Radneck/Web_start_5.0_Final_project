@@ -44,7 +44,7 @@
 					<div class="form brif__form">
 						<h3 class="form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
 						<span class="form__subtitle">Для этого заполните форму ниже</span>
-						<form action="#" id="brif-form">
+						<form action="mail.php" method="POST" id="brif-form">
 							<div class="input-brifGroup">
 								<input type="text" autocomplete="off" name="username" class="input brif__input" placeholder="Ваше Имя">
 							</div>

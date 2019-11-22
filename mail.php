@@ -6,6 +6,7 @@ require '/Users/leonid/Yandex.Disk.localized/Web_start_5.0/Homework/Web_start_5.
 // Переменные, которые отправляет пользователь
 $userName = $_POST['username'];
 $userPhone = $_POST['phone'];
+$userMail = $_POST['email'];
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
     $msg = "Форма успешно отправлена";
@@ -29,7 +30,8 @@ try {
     
     $mail->Subject = 'Новая заявка';
     $mail->Body    = "<b>Имя:</b> $userName <br>
-    <b>Телефон:</b> $userPhone";
+    <b>Телефон:</b> $userPhone <br>
+    <b>Email:</b> $userMail";
 
 
 // Проверяем отравленность сообщения
