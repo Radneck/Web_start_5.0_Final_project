@@ -12,30 +12,7 @@
 	<title>Document</title>
 </head>
 <body>
-	<nav class="navbar">
-		<div class="container">
-			<div class="navbar-block">
-				<div class="navbar__logo wow fadeIn" data-wow-delay='0.2s'>
-					<img src="img/Repair_logo.png" alt="Логотип">
-				</div>
-				<!-- /.navbar__logo -->
-				<div class="navbar__info wow fadeIn" data-wow-delay='0.2s'>
-					<div class="navbar__contacts">
-						<span class="navbar__address">
-							Калуга, Москва, МО
-						</span>
-						<a href="tel:+7 (495)42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
-					</div>
-					<!-- /.navbar__contacts -->
-					<button class="button navbar__button" id="button">Перезвоните мне</button>
-				</div>
-				<!-- /.navbar__info -->
-			</div>
-			<!-- /.navbar-block -->
-		</div>
-		<!-- /.container -->
-	</nav>
-	<!-- /.navbar -->
+	<?php include('navbar.php'); ?>
 
 	<main>
 		<section class="hero">
@@ -81,6 +58,7 @@
 			<!-- /.container -->
 		</section>
 		<!-- /.hero -->
+
 		<section class="offer section">
 			<div class="container">
 				<div class="offer-block wow fadeIn">
@@ -88,7 +66,7 @@
 					<!-- /.section-title -->
 					<span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
 					<!-- /.section-subtitle -->
-					<form action="#" class="form offer__form" id="offer-form">
+					<form action="mail.php" method="POST" class="form offer__form" id="offer-form">
 						<div class="input-group">
 						  <input type="text" class="input offer__input" autocomplete="off" name="username" placeholder="Ваше имя">
 						</div>
@@ -108,6 +86,7 @@
 			<!-- /.container -->
 		</section>
 		<!-- /.offer -->
+
 		<section class="section portfolio">
 			<div class="container">
 				<h2 class="section-title portfolio__title">Работая с 2007 года,<br>мы сделали более 500 ремонтов в квартирах и домах</h2>
@@ -207,6 +186,7 @@
 				</div>
 			</div>
 		</section>
+		<!-- конец секции price -->
 
 		<section class="section brif">
 			<div class="container">
@@ -256,42 +236,7 @@
 		</section>
 	</main> 
 
-	<footer class="footer">
-		<div class="map" id="map">
-			<script type="text/javascript" charset="utf-8" async
-				src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A71486657a66b95652dffa72808820d735cb2b9b6b0ce4268c123218bef347aa5&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false">
-				</script>
-		</div>
-		<div class="container">
-			<div class="contacts-block">
-				<div class="contacts">
-					<h3 class="contacts__title">Приезжайте к нам в гости! Проконсультируем Вас по всем вопросам ремонта</h3>
-					<ul class="contacts-list">
-						<li class="contacts-list__item">
-							<span class="contacts-list__icon">
-								<img src="./img/footer/map-placeholder.png" alt="Точка на карте">
-							</span>
-							<span class="contacts-list__text">г. Москва <br> <strong>ул. Ленинга, д. 10, корпус 2, оф. 308</strong></span>
-						</li>
-						<li class="contacts-list__item">
-							<span class="contacts-list__icon">
-								<img src="./img/footer/clock-with-white-face.png" alt="Часики">
-							</span>
-							<span class="contacts-list__text">Режим работы:<br><strong>с 9:00 до 18:00</strong></span>
-						</li>
-						<li class="contacts-list__item">
-							<span class="contacts-list__icon">
-								<img src="./img/footer/phone-call-button.png" alt="Телефон">
-							</span>
-							<span class="contacts-list__text">Телефон:<br> 
-								<a href="tel: + 7 (495) 42-251-31"><strong>+ 7 (495) 42-251-31</strong></a>
-							</span>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
+	<?php include('footer.php'); ?>
 <!--КОНЕЦ ОСНОВНОГО ДОКУМЕНТА (СТРАНИЦЫ)-->
 
 
@@ -331,6 +276,7 @@
 	<script src="js/wow.min.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
+	<!-- Валидация -->
 	<script>
 	  new WOW().init();
 	  $(document).ready(function(){
@@ -445,8 +391,6 @@
 		});
 	  });
 	</script>
-	<!-- <img style="display: block;" src="./img/brif/brif-bg.jpg" alt=""> -->
-	</div>
 
 </body>
 </html>
